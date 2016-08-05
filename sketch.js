@@ -2,7 +2,7 @@
 function circle(x,y,size) {
   ellipse(x,y,size,size);
 }
-
+//make background
 function setup() {
   createCanvas(600,400);
   background(0,0,255,100)
@@ -16,8 +16,9 @@ function setup() {
   circle(300,290,15);
   circle(300,260,15);
 }
+//add a snowball
 function mousePressed(){
   noStroke();
   fill(255,255,255);
-  ellipse(mouseX, mouseY, 20, 20);
+  circle(mouseX, mouseY, 20);
 }
